@@ -1,3 +1,7 @@
+# Misc
+/surf/surf
+/surf/config.h
+
 # Prerequisites
 *.d
 
