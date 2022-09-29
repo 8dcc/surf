@@ -1,6 +1,6 @@
 /* modifier 0 means no modifier */
 static int surfuseragent = 1; /* Append Surf version to default WebKit user agent */
-static char* fulluseragent = "NiggaOS v4.20"; /* Or override the whole user agent
+static char* fulluseragent = "BasedOS v4.20"; /* Or override the whole user agent
                                                  string */
 static char* scriptfile = "~/.surf/script.js";
 static char* styledir   = "~/.surf/styles/";
@@ -206,4 +206,4 @@ static Button buttons[] = {
     { OnMedia, MODKEY, 1, clickexternplayer, { 0 }, 1 },
 };
 
-#define HOMEPAGE "~/.homepage/browser-homepage/homepage.html"
+#define HOMEPAGE "~/001-GIT/browser-homepage/homepage.html"
