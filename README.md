@@ -41,8 +41,9 @@ tabbed surf -e
 # Or if you want to pass arguments you can add an alias to your bashrc
 
 tsurf() {
-    # Pass tabbed as window id + args
-    surf -e $(tabbed -d) "$@"
+    # tabbed: close tabbed when we exit the program and pass tabbed's window id as 2nd arg for surf
+    # surf: Use the 2nd arg as window id and open the tsurf args as website
+    tabbed -c -r 2 surf -e '' "$@"
 }
 ```
 
