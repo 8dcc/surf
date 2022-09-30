@@ -40,6 +40,10 @@ clean:
 	rm -f surf $(OBJ)
 	rm -f $(WLIB) $(WOBJ)
 
+# I edit config.def.h so I also remove config.h
+cleaner: clean
+	rm config.h
+
 distclean: clean
 	rm -f config.h surf-$(VERSION).tar.gz
 
