@@ -130,8 +130,9 @@ static WebKitFindOptions findopts =
  * the list.
  */
 static SiteSpecific styles[] = {
-    /* regexp               file in $styledir */
-    { ".*", "default.css" },
+    /* regexp           file in $styledir */
+    { ".*4chan.*\\..*", "4chan.css" },
+    { ".*",             "default.css" },
 };
 
 /* certificates */
