@@ -12,8 +12,10 @@ git clone https://github.com/r4v10l1/surf
 cd surf/surf
 sudo make clean install
 ```
-If you having any problems (stuck loading webpages, etc.) try moving the following files:
+If you having any problems (stuck loading webpages, etc.) try:
 ```bash
+sudo make move
+# Or
 sudo mv /usr/local/bin/surf /usr/bin/surf
 sudo mv /usr/local/lib/surf /usr/lib/surf
 ```
