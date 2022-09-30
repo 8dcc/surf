@@ -1,5 +1,13 @@
 #define HOMEPAGE "~/001-GIT/browser-homepage/homepage.html"
 
+static Alias aliases[] = {
+    /* Alias        URI */
+    { "home",      HOMEPAGE },
+    { "ddg",       "https://duckduckgo.com" },
+    { "google",    "https://google.com" },
+    { "wikipedia", "https://www.wikipedia.org" }
+};
+
 /* modifier 0 means no modifier */
 static int surfuseragent = 0; /* Append Surf version to default WebKit user agent */
 static char* fulluseragent = ""; /* Or override the whole user agent string */
@@ -210,8 +218,3 @@ static Button buttons[] = {
     { OnMedia, MODKEY, 1, clickexternplayer, { 0 }, 1 },
 };
 
-static Alias aliases[] = {
-    /* Alias        URI */
-    { "ddg",       "https://duckduckgo.com" },
-    { "wikipedia", "https://www.wikipedia.org" }
-};
