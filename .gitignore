@@ -2,6 +2,10 @@
 /surf/surf
 /surf/config.h
 
+/tabbed/tabbed
+/tabbed/xembed
+/tabbed/config.h
+
 # Prerequisites
 *.d
 
