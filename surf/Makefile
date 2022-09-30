@@ -73,4 +73,9 @@ uninstall:
 	done
 	- rmdir $(DESTDIR)$(LIBDIR)
 
+move:
+	mv $(DESTDIR)$(PREFIX)/bin/surf /usr/bin/
+	cp -r $(DESTDIR)$(LIBDIR) /usr/lib/
+	rm -r $(DESTDIR)$(LIBDIR)
+
 .PHONY: all options distclean clean dist install uninstall
