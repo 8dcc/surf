@@ -47,4 +47,4 @@ tsurf() {
 ```
 
 ## Customizing
-Edit [`surf/config.def.h`](surf/config.def.h) and change the `HOMEPAGE` define.
+Edit [`surf/config.def.h`](surf/config.def.h) and change the `HOMEPAGE` define. If you want to have a look at a good homepage check out [r4v10l1/browser-homepage](https://github.com/r4v10l1/browser-homepage).
