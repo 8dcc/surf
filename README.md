@@ -11,6 +11,9 @@ sudo pacman -S webkit2gtk gcr
 git clone https://github.com/r4v10l1/surf
 cd surf/surf
 sudo make clean install
+
+# Or if you edit config.def.h instead of config.h
+sudo make cleaner install
 ```
 If you having any problems (stuck loading webpages, etc.) try:
 ```bash
