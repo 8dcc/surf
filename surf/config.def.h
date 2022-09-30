@@ -1,3 +1,5 @@
+#define HOMEPAGE "~/001-GIT/browser-homepage/homepage.html"
+
 /* modifier 0 means no modifier */
 static int surfuseragent = 0; /* Append Surf version to default WebKit user agent */
 static char* fulluseragent = ""; /* Or override the whole user agent string */
@@ -60,7 +62,7 @@ static UriParameters uriparams[] = {
 };
 
 /* default window size: width, height */
-static int winsize[] = { 800, 600 };
+static int winsize[] = { 1000, 600 };
 
 static WebKitFindOptions findopts =
   WEBKIT_FIND_OPTIONS_CASE_INSENSITIVE | WEBKIT_FIND_OPTIONS_WRAP_AROUND;
@@ -207,5 +209,3 @@ static Button buttons[] = {
     { OnAny, 0, 9, clicknavigate, { .i = +1 }, 1 },
     { OnMedia, MODKEY, 1, clickexternplayer, { 0 }, 1 },
 };
-
-#define HOMEPAGE "~/001-GIT/browser-homepage/homepage.html"
