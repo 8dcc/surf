@@ -1,5 +1,5 @@
 # Surf
-**My custom surf browser fork.**
+**My custom surf browser (and tabbed) fork.**
 
 ## Requirements
 ```bash
@@ -7,6 +7,7 @@ sudo pacman -S webkit2gtk gcr
 ```
 
 ## Compiling
+#### Surf
 ```bash
 git clone https://github.com/r4v10l1/surf
 cd surf/surf
@@ -21,6 +22,28 @@ sudo make move
 # Or
 sudo mv /usr/local/bin/surf /usr/bin/surf
 sudo mv /usr/local/lib/surf /usr/lib/surf
+```
+
+#### Tabbed
+I personally use tabbed for surf, but you can use it for other stuff like st.
+```bash
+git clone https://github.com/r4v10l1/surf
+cd surf/tabbed
+sudo make clean install
+
+# Or if you edit config.def.h instead of config.h
+sudo make cleaner install
+```
+Then you can run surf + tabbed using:
+```bash
+tabbed surf -e
+
+# Or if you want to pass arguments you can add an alias to your bashrc
+
+tsurf() {
+    # Pass tabbed as window id + args
+    surf -e $(tabbed -d) "$@"
+}
 ```
 
 ## Customizing
