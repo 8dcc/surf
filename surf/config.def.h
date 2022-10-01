@@ -99,6 +99,7 @@ static WebKitFindOptions findopts =
     {                                                            \
         .v = (const char*[]) {                                   \
             "st", "-e", "/bin/sh", "-c",                         \
+              "cd ~/Downloads;"                                  \
               "curl -g -L -J -O -A \"$1\" -b \"$2\" -c \"$2\""   \
               " -e \"$3\" \"$4\"; read",                         \
               "surf-download", useragent, cookiefile, r, u, NULL \
@@ -178,8 +179,9 @@ static Key keys[] = {
     /* Some Ctrl+Shift keys commented because of compatibility with tabbed
     { MODKEY | GDK_SHIFT_MASK, GDK_KEY_j, zoom, { .i = -1 } },
     { MODKEY | GDK_SHIFT_MASK, GDK_KEY_k, zoom, { .i = +1 } },
-    { MODKEY | GDK_SHIFT_MASK, GDK_KEY_q, zoom, { .i = 0 } },
     */
+    { MODKEY | GDK_SHIFT_MASK, GDK_KEY_q, zoom, { .i = 0 } },
+
     { MODKEY, GDK_KEY_minus, zoom, { .i = -1 } },
     { MODKEY, GDK_KEY_plus, zoom, { .i = +1 } },
 
