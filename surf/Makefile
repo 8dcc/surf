@@ -42,7 +42,7 @@ clean:
 
 # I edit config.def.h so I also remove config.h
 cleaner: clean
-	rm config.h
+	rm -f config.h
 
 distclean: clean
 	rm -f config.h surf-$(VERSION).tar.gz
