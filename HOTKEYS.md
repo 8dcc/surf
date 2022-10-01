@@ -43,6 +43,7 @@ Key             | Description
 `Ctrl+U`        | Scroll left in the page (*broken?*)
 `Ctrl++`        | Increase zoom
 `Ctrl+-`        | Decrease zoom
+`Ctrl+Shift+Q`  | Restore zoom
 
 ### Surf operators
 Key             | Description
