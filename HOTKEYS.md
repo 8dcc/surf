@@ -9,8 +9,9 @@ Key             | Description
 `Ctrl+Y`        | Copy current URI to clipboard
 `Ctrl+R`        | Reload the page
 `Ctrl+Shift+R`  | Reload the page without using cache
-`Ctrl+C`        | Calcel loading page
 `Esc`           | Calcel loading page
+`Ctrl+C`        | Copy
+`Ctrl+V`        | Paste
 `Ctrl+Shift+P`  | Open the print prompt
 `Ctrl+Shift+O`  | Open the developer prompt (Needs `-N` flag)
 `F11`           | Toggle fullscreen
