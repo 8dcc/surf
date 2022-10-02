@@ -2,9 +2,9 @@
 
 /* appearance */
 static const char font[]       = "dina:size=9";
-static const char* normbgcolor = "#333333";
+static const char* normbgcolor = "#222222";
 static const char* normfgcolor = "#cccccc";
-static const char* selbgcolor  = "#af2626";
+static const char* selbgcolor  = "#444444";
 static const char* selfgcolor  = "#ffffff";
 static const char* urgbgcolor  = "#111111";
 static const char* urgfgcolor  = "#555555";
@@ -14,6 +14,9 @@ static const char titletrim[]  = "...";
 static const int tabwidth      = 200;
 static const Bool foreground   = True;
 static Bool urgentswitch       = False;
+
+static const int tg_width = 3;
+static const char* tg_color = "#af2626";
 
 /*
  * Where to place a new tab when it is opened. When npisrelative is True,

@@ -68,6 +68,7 @@ typedef struct {
 	XftColor norm[ColLast];
 	XftColor sel[ColLast];
 	XftColor urg[ColLast];
+    XftColor tag;
 	Drawable drawable;
 	GC gc;
 	struct {
@@ -385,6 +386,14 @@ drawtext(const char *text, XftColor col[ColLast])
 
 	XSetForeground(dpy, dc.gc, col[ColBG].pixel);
 	XFillRectangles(dpy, dc.drawable, dc.gc, &r, 1);
+
+    if (col[ColBG].pixel == dc.sel[ColBG].pixel) {
+        XSetForeground(dpy, dc.gc, dc.tag.pixel);
+        XRectangle tg_rect = { dc.x, dc.y, tg_width, dc.h };
+        XFillRectangles(dpy, dc.drawable, dc.gc, &tg_rect, 1);
+        XSetForeground(dpy, dc.gc, col[ColBG].pixel);   // Reset it
+    }
+
 	if (!text)
 		return;
 
@@ -1036,6 +1045,7 @@ setup(void)
 	dc.sel[ColFG] = getcolor(selfgcolor);
 	dc.urg[ColBG] = getcolor(urgbgcolor);
 	dc.urg[ColFG] = getcolor(urgfgcolor);
+	dc.tag = getcolor(tg_color);
 	dc.drawable = XCreatePixmap(dpy, root, ww, wh,
 	                            DefaultDepth(dpy, screen));
 	dc.gc = XCreateGC(dpy, root, 0, 0);
