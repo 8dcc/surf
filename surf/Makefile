@@ -77,9 +77,8 @@ uninstall:
 	done
 	- rmdir $(DESTDIR)$(LIBDIR)
 
-move:
-	mv $(DESTDIR)$(PREFIX)/bin/surf /usr/bin/
-	cp -r $(DESTDIR)$(LIBDIR) /usr/lib/
-	rm -r $(DESTDIR)$(LIBDIR)
+# Remove the .so from /usr/local/lib/surf to avoid errors (but remove some functionality like scrolling)
+nolib:
+	rm $(DESTDIR)$(LIBDIR)$(WLIB)
 
 .PHONY: all options distclean clean dist install uninstall
