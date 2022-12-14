@@ -66,4 +66,4 @@ uninstall:
 	@rm -f "${DESTDIR}${MANPREFIX}/man1/tabbed.1"
 	@rm -f "${DESTDIR}${MANPREFIX}/man1/xembed.1"
 
-.PHONY: all options clean dist install uninstall
+.PHONY: all options clean cleaner dist install uninstall

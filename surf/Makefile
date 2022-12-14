@@ -77,4 +77,4 @@ uninstall:
 	done
 	- rmdir $(DESTDIR)$(LIBDIR)
 
-.PHONY: all options distclean clean dist install uninstall
+.PHONY: all options distclean clean cleaner dist install uninstall
