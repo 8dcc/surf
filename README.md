@@ -2,8 +2,13 @@
 **My custom surf browser (and tabbed) fork.**
 
 ## Requirements
+Arch GNU/Linux:
 ```bash
 sudo pacman -S webkit2gtk gcr 
+```
+Gentoo GNU/Linux (Note the versions):
+```bash
+doas emerge =net-libs/libsoup-2.74.3 =net-libs/webkit-gtk-2.38.2
 ```
 
 ## Compiling
