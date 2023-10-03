@@ -21,13 +21,6 @@ sudo make clean install
 # Or if you edit config.def.h instead of config.h
 sudo make cleaner install
 ```
-If you having any problems (stuck loading webpages, etc.) try:
-```bash
-sudo make move
-# Or
-sudo mv /usr/local/bin/surf /usr/bin/surf
-sudo mv /usr/local/lib/surf /usr/lib/surf
-```
 
 #### Tabbed
 I personally use tabbed for surf, but you can use it for other stuff like st.
