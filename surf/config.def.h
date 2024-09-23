@@ -1,4 +1,5 @@
-#define HOMEPAGE "~/001-GIT/browser-homepage/homepage.html"
+
+#define HOMEPAGE "~/01-GIT/dotfiles/browser/homepage.html"
 
 static Alias aliases[] = {
     /* Alias        URI */
